@@ -1,6 +1,6 @@
 /*
 8.zadatak nisam nikako uspio riješiti, čak ni s pomoć googlea, iako ga je AI riješio bez problema,
-ali nisam htio kopirati taj kod, jer ga ne razumijem u potpunosti pa ne bi bilo fer da se to računa kao moj rad.
+ali nisam htio kopirati taj kod, jer ga ne razumijem u potpunosti pa ne bi bilo fer da se to računa kao moj rad. 
 
 Par zadatka sam morao promijeniti, kao što je odabir proizvodaa i boje, jer proizvoda koje je zadatak tražio nije bilo na stanju.
 
