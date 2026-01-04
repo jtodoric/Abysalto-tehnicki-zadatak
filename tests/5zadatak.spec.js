@@ -1,3 +1,12 @@
+/*
+8.zadatak nisam nikako uspio riješiti, čak ni s pomoć googlea, iako ga je AI riješio bez problema,
+ali nisam htio kopirati taj kod, jer ga ne razumijem u potpunosti pa ne bi bilo fer da se to računa kao moj rad.
+
+Par zadatka sam morao promijeniti, kao što je odabir proizvodaa i boje, jer proizvoda koje je zadatak tražio nije bilo na stanju.
+
+Također nisam na web stranici nigdje uspio naći gdje se skida PDF narudžbe pa nisam mogao rješiti 20.zadatak.
+*/
+
 const { test, expect } = require ('@playwright/test');
 const {faker, fa} = require('@faker-js/faker');
 
@@ -21,7 +30,6 @@ test ('5.zadatak', async ({page}) => {
   await page.goto ('http://www.automationpractice.pl/');
 
     //2
-    //await page.click ('text=Sign in');
     await page.locator('.login').click();
 
     //3
@@ -77,7 +85,6 @@ test ('5.zadatak', async ({page}) => {
     await page.selectOption ('#id_contact', 'Customer service');
     const poruka = "ime--> " + user_data.ime + "\nprezime--> " + user_data.prezime + "\nemail--> " + user_data.email;
     await page.fill ('#message', poruka);
-    //await page.click ('text=Send');
     await page.locator ('#submitMessage').click();
     const poruka_poslana = page.locator ('.alert.alert-success');
     await expect (poruka_poslana).toBeVisible();
@@ -135,7 +142,7 @@ test ('5.zadatak', async ({page}) => {
       Postanski_broj: user_data.postanski_broj,
       Telefon: user_data.telefon
     });
-    console.log ('-------Detalji narudžbe-------');
+    console.log ('Detalji narudžbe');
     console.log ('ID:', id_narudzbe);
     console.log ('Datum narudžbe:', datum_narudzbe);
     console.log ('Ukupna cijena:', ukupna_cijena);
